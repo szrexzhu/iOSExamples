@@ -93,7 +93,7 @@
          [00:19.67]\r\n\
          [00:26.73]真情像草原广阔\r\n\
          [00:33.65]层层风雨不能阻隔\r\n\
-         [00:40.73]总有云开 日出时候" forKey:MPMediaItemPropertyLyrics];//怎么没效果？
+         [00:40.73]总有云开 日出时候" forKey:MPMediaItemPropertyLyrics];//怎么没效果？MPNowPlayingInfoCenter.h文件前边列的支持类型里没有这个
         
         UIImage *image = [UIImage imageNamed:@"feiyuqing.jpeg"];
         MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
