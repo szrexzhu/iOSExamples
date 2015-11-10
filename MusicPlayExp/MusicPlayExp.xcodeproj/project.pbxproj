@@ -287,7 +287,7 @@
 				INFOPLIST_FILE = MusicPlayExp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MusicPlayExp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rexzhu.MusicPlayExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -300,7 +300,7 @@
 				INFOPLIST_FILE = MusicPlayExp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MusicPlayExp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rexzhu.MusicPlayExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -324,6 +324,7 @@
 				19FBC3161BF1907700ED1AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
