@@ -52,10 +52,20 @@
     {
         NSLog(@">>>不支持applicationMusicPlayer。");
     }
-    
 }
+
+- (void) localMusicFiles
+{
+    MPMediaQuery *query = [[MPMediaQuery alloc] init];
+    for (MPMediaItem *item in query.items) {
+        NSLog(@"Song name=%@",[item valueForProperty:MPMediaItemPropertyTitle]);
+    }
+}
+
 - (IBAction)checkCurrentPlayingInfo:(id)sender {
     [self currentPlayingInfo];
+    
+    [self localMusicFiles];
 }
 
 @end
