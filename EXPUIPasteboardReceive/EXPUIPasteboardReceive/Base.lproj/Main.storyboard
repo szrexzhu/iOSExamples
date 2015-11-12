@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统剪切板内容:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAN-hF-9kG">
+                                <rect key="frame" x="55" y="28" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6m5-wJ-9Rn"/>
+                                    <constraint firstAttribute="width" constant="124" id="ntj-q7-dA8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义剪切板内容:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z3-d3-J7w">
+                                <rect key="frame" x="47" y="295" width="141" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="R1J-vA-WOr"/>
+                                    <constraint firstAttribute="width" constant="141" id="a6Q-7h-wj3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5T-tu-lIb">
+                                <rect key="frame" x="55" y="73" width="506" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.41546761040000002" blue="0.1076114208" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XCb-DD-DUZ"/>
+                                    <constraint firstAttribute="width" constant="387" id="Yyf-GU-uyl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Yyf-GU-uyl"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AM-cn-j4L">
+                                <rect key="frame" x="47" y="359" width="514" height="21"/>
+                                <color key="backgroundColor" red="0.46936720589999997" green="0.1175694372" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="387" id="6pU-hR-j58"/>
+                                    <constraint firstAttribute="height" constant="21" id="Aix-kY-SYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6pU-hR-j58"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-vX-1Zj">
+                                <rect key="frame" x="233" y="111" width="135" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="hbg-yK-DFE"/>
+                                    <constraint firstAttribute="height" constant="30" id="mFX-tr-3E0"/>
+                                </constraints>
+                                <state key="normal" title="获取系统剪切板内容"/>
+                                <connections>
+                                    <action selector="expGetSystemPasteboardContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pa6-PB-K2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k49-3r-sLS">
+                                <rect key="frame" x="225" y="398" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mpl-SG-Iet"/>
+                                    <constraint firstAttribute="width" constant="150" id="iXf-v3-hat"/>
+                                </constraints>
+                                <state key="normal" title="获取自定义剪切板内容"/>
+                                <connections>
+                                    <action selector="expGetCumtomPasteboardContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1b-fy-NZb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ie-p7-Ob8"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4Xz-t6-1sw"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5rT-UT-kwE"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8cK-Vi-hEw"/>
+                            <constraint firstItem="WAN-hF-9kG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="EJP-ao-EnI"/>
+                            <constraint firstItem="k49-3r-sLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7Q-4B-wqp"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="top" secondItem="5z3-d3-J7w" secondAttribute="bottom" constant="43" id="HcJ-uu-ecC"/>
+                            <constraint firstItem="k49-3r-sLS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="378" id="I4c-If-ckN"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="top" secondItem="WAN-hF-9kG" secondAttribute="top" id="Kem-Xe-yoX"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="leading" secondItem="WAN-hF-9kG" secondAttribute="trailing" constant="-124" id="Lmx-DL-7YQ"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="275" id="Qbk-84-gLe"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="leading" secondItem="5z3-d3-J7w" secondAttribute="leading" id="SKZ-Bh-Xf5"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="top" secondItem="5z3-d3-J7w" secondAttribute="top" id="TSH-Eo-0vg"/>
+                            <constraint firstItem="r0Q-vX-1Zj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wgd-Qx-qci"/>
+                            <constraint firstItem="r0Q-vX-1Zj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="d95-bu-bR3"/>
+                            <constraint firstItem="5z3-d3-J7w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="275" id="hJo-NE-auy"/>
+                            <constraint firstItem="5z3-d3-J7w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="kxA-3D-EpO"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="leading" secondItem="WAN-hF-9kG" secondAttribute="leading" id="pcz-QV-8Rm"/>
+                            <constraint firstItem="7AM-cn-j4L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcs-C3-DeB"/>
+                            <constraint firstItem="WAN-hF-9kG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="x6J-f8-n8z"/>
+                            <constraint firstItem="i5T-tu-lIb" firstAttribute="top" secondItem="WAN-hF-9kG" secondAttribute="bottom" constant="24" id="z3U-XY-pKV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5rT-UT-kwE"/>
+                                <exclude reference="Kem-Xe-yoX"/>
+                                <exclude reference="Lmx-DL-7YQ"/>
+                                <exclude reference="pcz-QV-8Rm"/>
+                                <exclude reference="Qbk-84-gLe"/>
+                                <exclude reference="SKZ-Bh-Xf5"/>
+                                <exclude reference="TSH-Eo-0vg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="customPasteboardContentLabel" destination="7AM-cn-j4L" id="fXh-VG-dkr"/>
+                        <outlet property="systemPasteboardContentLabel" destination="i5T-tu-lIb" id="xSY-02-Zni"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="619"/>
+        </scene>
+    </scenes>
+</document>
