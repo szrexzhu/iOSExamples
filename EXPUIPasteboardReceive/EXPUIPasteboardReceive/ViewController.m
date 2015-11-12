@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+static NSString * const PasteboardName = @"EXPUIPasteboard";
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *systemPasteboardContentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *customPasteboardContentLabel;
@@ -32,7 +34,7 @@
     self.systemPasteboardContentLabel.text = board.string;
 }
 - (IBAction)expGetCumtomPasteboardContent:(id)sender {
-    UIPasteboard *board = [UIPasteboard pasteboardWithName:@"EXPUIPasteboard" create:YES];//获取这个在7.1系统上测试也没有Bundle Identifier前缀相同的限制?>>要求的是Team相同，都是用自己的Apple ID。误会了
+    UIPasteboard *board = [UIPasteboard pasteboardWithName:PasteboardName create:YES];//获取这个在7.1系统上测试也没有Bundle Identifier前缀相同的限制?>>要求的是Team相同，都是用自己的Apple ID。误会了
     self.customPasteboardContentLabel.text = board.string;
 }
 

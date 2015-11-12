@@ -33,6 +33,10 @@ static NSString * const PasteboardName = @"EXPUIPasteboard";
 
 - (IBAction)sentToCustomPasteboard:(id)sender {
     UIPasteboard *board = [UIPasteboard pasteboardWithName:PasteboardName create:YES];
+    board.persistent = YES;//无论删除app，重启手机都在，这太好了。
     board.string = self.contentField.text;
+}
+- (IBAction)deleteCustomPasteboard:(id)sender {
+    [UIPasteboard removePasteboardWithName:PasteboardName];
 }
 @end

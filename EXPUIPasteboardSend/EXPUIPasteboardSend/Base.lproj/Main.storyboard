@@ -48,6 +48,17 @@
                                     <action selector="sentToCustomPasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVV-vj-EP8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q43-7S-YvA">
+                                <rect key="frame" x="240" y="156" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="bPd-gr-uYk"/>
+                                    <constraint firstAttribute="height" constant="30" id="jWg-iz-ITk"/>
+                                </constraints>
+                                <state key="normal" title="删除自定义剪切板"/>
+                                <connections>
+                                    <action selector="deleteCustomPasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iL9-Mw-Z3Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -55,8 +66,10 @@
                             <constraint firstItem="a9k-Xs-tRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3jx-MU-YE1"/>
                             <constraint firstItem="5uY-jD-ZIm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="9IQ-by-2gq"/>
                             <constraint firstItem="WZh-OH-38H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="BtS-rA-jbW"/>
+                            <constraint firstItem="q43-7S-YvA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dRf-1y-lem"/>
                             <constraint firstItem="5uY-jD-ZIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fGK-Dn-jGB"/>
                             <constraint firstItem="WZh-OH-38H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uOB-Mk-VxG"/>
+                            <constraint firstItem="q43-7S-YvA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="136" id="xrT-eg-SWt"/>
                         </constraints>
                     </view>
                     <connections>
