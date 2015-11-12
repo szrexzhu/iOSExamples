@@ -111,6 +111,11 @@
 					19FBC3491BF3284800ED1AF9 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = P3CQMS4QJ9;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+static NSString * const PasteboardName = @"EXPUIPasteboard";
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *contentField;
 
@@ -18,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +32,7 @@
 }
 
 - (IBAction)sentToCustomPasteboard:(id)sender {
-    UIPasteboard *board = [UIPasteboard pasteboardWithName:@"EXPUIPasteboard" create:YES];
+    UIPasteboard *board = [UIPasteboard pasteboardWithName:PasteboardName create:YES];
     board.string = self.contentField.text;
 }
 @end

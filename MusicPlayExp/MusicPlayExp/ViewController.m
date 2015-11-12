@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+static NSString * const PasteboardName = @"EXPUIPasteboard";
+
+
 @import AVFoundation;
 @import MediaPlayer;
 
@@ -18,11 +21,27 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(changePasteboard) userInfo:nil repeats:YES];
+}
+
+//测试后台修改剪切板，看另外的app是否能监测到Notification
+- (void) changePasteboard
+{
+    //结论，另外app收不到UIPasteboardChangedNotification通知，看网络结论只能通过定时检查pasteboard来判断
+//    [UIPasteboard removePasteboardWithName:PasteboardName];
+//    UIPasteboard *board = [UIPasteboard pasteboardWithName:PasteboardName create:YES];
+    
+    UIPasteboard *board = [UIPasteboard generalPasteboard];
+    board.string = [NSString stringWithFormat:@"Date:%@",[NSDate date]];
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:UIPasteboardChangedNotification object:nil userInfo:nil];//瞎尝试，这样在另外一个app还是收不到通知
 }
 
 - (void)didReceiveMemoryWarning {
