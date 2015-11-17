@@ -29,7 +29,7 @@ static NSString * const PasteboardName = @"EXPUIPasteboard";
 //pasteboardDB root object is NSArray. Each element is a NSDictionary object that's bound to specific bundle id and name. For example, general copy/paste uses shared storage - dictionary has bundle->com.apple.UIKit.pboard and name->com.apple.UIKit.pboard.general keys. Under items key there is an array of pasteboard items. Yoy can try to copy some text and you will find it there as unencrypted UTF8 string stored as NSData object.
 
 
-
+ 
 @implementation ViewController
 
 - (void)viewDidLoad {
