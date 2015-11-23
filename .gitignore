@@ -1,0 +1,15 @@
+#忽略gitignore文件  
+.gitignore  
+#忽略后缀名为的文件  
+*.xcuserstate
+*.o
+*.lo
+*.la
+*.libs
+*.so
+*.so.[0-9]*
+*.pyc
+*.pyo
+*.rej
+*.DS_Store
+xcuserdata/
