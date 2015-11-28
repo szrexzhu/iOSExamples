@@ -14,6 +14,8 @@
 		193467F11C00C1190033DC7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193467F01C00C1190033DC7A /* Images.xcassets */; };
 		193467F41C00C1190033DC7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 193467F21C00C1190033DC7A /* LaunchScreen.xib */; };
 		193468001C00C1190033DC7A /* BlockExpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193467FF1C00C1190033DC7A /* BlockExpTests.m */; };
+		1934680B1C00C16C0033DC7A /* ARCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934680A1C00C16C0033DC7A /* ARCBlock.m */; };
+		1934680E1C01380D0033DC7A /* ExamplesFromInternet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934680D1C01380D0033DC7A /* ExamplesFromInternet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		193467F91C00C1190033DC7A /* BlockExpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockExpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		193467FE1C00C1190033DC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193467FF1C00C1190033DC7A /* BlockExpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockExpTests.m; sourceTree = "<group>"; };
+		193468091C00C16C0033DC7A /* ARCBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCBlock.h; sourceTree = "<group>"; };
+		1934680A1C00C16C0033DC7A /* ARCBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCBlock.m; sourceTree = "<group>"; };
+		1934680C1C01380D0033DC7A /* ExamplesFromInternet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamplesFromInternet.h; sourceTree = "<group>"; };
+		1934680D1C01380D0033DC7A /* ExamplesFromInternet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplesFromInternet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				193467F01C00C1190033DC7A /* Images.xcassets */,
 				193467F21C00C1190033DC7A /* LaunchScreen.xib */,
 				193467E31C00C1190033DC7A /* Supporting Files */,
+				193468091C00C16C0033DC7A /* ARCBlock.h */,
+				1934680A1C00C16C0033DC7A /* ARCBlock.m */,
+				1934680C1C01380D0033DC7A /* ExamplesFromInternet.h */,
+				1934680D1C01380D0033DC7A /* ExamplesFromInternet.m */,
 			);
 			path = BlockExp;
 			sourceTree = "<group>";
@@ -220,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				193467EC1C00C1190033DC7A /* ViewController.m in Sources */,
+				1934680E1C01380D0033DC7A /* ExamplesFromInternet.m in Sources */,
 				193467E91C00C1190033DC7A /* AppDelegate.m in Sources */,
+				1934680B1C00C16C0033DC7A /* ARCBlock.m in Sources */,
 				193467E61C00C1190033DC7A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +357,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = NO;
 				INFOPLIST_FILE = BlockExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +369,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = NO;
 				INFOPLIST_FILE = BlockExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

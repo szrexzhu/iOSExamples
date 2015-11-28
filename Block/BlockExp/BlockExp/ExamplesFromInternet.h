@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ExamplesFromInternet : NSObject
+
+
++ (void) exampleB;
++ (void) exampleC;
 
 @end

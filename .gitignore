@@ -1,5 +1,5 @@
 #忽略gitignore文件  
-.gitignore  
+#.gitignore  
 #忽略后缀名为的文件  
 *.xcuserstate
 *.o
@@ -13,3 +13,4 @@
 *.rej
 *.DS_Store
 xcuserdata/
+xcshareddata/
